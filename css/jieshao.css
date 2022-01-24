@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(../images/个人主页背景图.jpg);
+}
+.dn_h1 {
+  margin-top: 50px;
+  text-align: center;
+}
+/* 导航条 */
+.d_h_l {
+  width: 90%;
+  height: 60px;
+  margin-left: 5%;
+  margin-top: 50px;
+  background-color: #c3d2a7;
+}
+
+.dhl_ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+  display: inline;
+  height: 80%;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d3e0c4;
+}
+
+.dhl_ul li:hover {
+  cursor: pointer;
+}
+
+.cont_1 {
+  width: 90%;
+  height: 400px;
+  margin-left: 5%;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.cont_1_1 {
+  width: 15%;
+  height: 80%;
+  margin-left: 3%;
+  background-color: #fff;
+}
+.cont_1_2 {
+  width: 80%;
+  height: 90%;
+  margin-left: 2%;
+  background-color: #fff;
+}
+.cont_img_2 {
+  width: 100%;
+  height: 100%;
+}
+.c_grjj_top {
+  width: 100%;
+  height: 40%;
+}
+.c_grjj_top_h {
+  text-align: center;
+}
+.c_grjj {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: space-around;
+}
+.c_grjjz {
+  width: 20%;
+  height: 50%;
+  border-radius: 30%;
+  background-color: rgba(31, 30, 30, 0.048);
+}
+
+.c_grjjz:hover {
+  background-color: rgba(31, 30, 30, 0.356);
+}
+
+.erweima_wx {
+  position: absolute;
+  top: 250px;
+  left: 475px;
+  width: 100px;
+  height: 100px;
+  opacity: 0;
+}
+.erweima_wxgzh {
+  position: absolute;
+  top: 250px;
+  left: 745px;
+  width: 100px;
+  height: 100px;
+  opacity: 0;
+}
+
+/* 我的技能 */
+.cont_1_2_jn {
+  width: 96%;
+  height: 90%;
+  margin-left: 2%;
+  background-color: #fff;
+  display: flex;
+  border-bottom: #010200 5px solid;
+  border-left: #010200 5px solid;
+}
+
+.jn_ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  align-items: flex-end;
+}
+
+.jn_li_html {
+  width: 2%;
+  height: 90%;
+  writing-mode: vertical-rl;
+  color: #ffffff;
+}
+
+.jn_li_css {
+  width: 2%;
+  height: 80%;
+  writing-mode: vertical-rl;
+  color: #ffffff;
+}
+.jn_li_js {
+  width: 2%;
+  height: 70%;
+  writing-mode: vertical-rl;
+  color: #ffffff;
+}
+
+.jn_li_jq {
+  width: 2%;
+  height: 70%;
+  writing-mode: vertical-rl;
+  color: #ffffff;
+}
+
+.jn_li_btp {
+  width: 2%;
+  height: 80%;
+  writing-mode: vertical-rl;
+  color: #ffffff;
+}
+.jn_li_vue {
+  width: 2%;
+  height: 50%;
+  writing-mode: vertical-rl;
+  color: #ffffff;
+}
+
+.jn_li_word {
+  width: 2%;
+  height: 90%;
+  writing-mode: vertical-rl;
+  color: #ffffff;
+}
+
+.jn_li_excel {
+  width: 2%;
+  height: 80%;
+  writing-mode: vertical-rl;
+  color: #ffffff;
+}
+.jn_li_ppt {
+  width: 2%;
+  height: 70%;
+  writing-mode: vertical-rl;
+  color: #ffffff;
+}
+
+.jn_li_ps {
+  width: 2%;
+  height: 90%;
+  writing-mode: vertical-rl;
+  color: #ffffff;
+}
+
+.jn_li_ai {
+  width: 2%;
+  height: 70%;
+  writing-mode: vertical-rl;
+  color: #ffffff;
+}
+.jn_li_pr {
+  width: 2%;
+  height: 70%;
+  writing-mode: vertical-rl;
+  color: #ffffff;
+}
+
+.cont_1_zp {
+  width: 96%;
+  height: 90%;
+  margin-left: 2%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.zp_top {
+  width: 96%;
+  height: 30%;
+  margin-left: 2%;
+  margin-top: 1%;
+}
+
+.zp_top_1 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.zp_top_bgdc {
+  margin-top: 10px;
+  margin-left: 10px;
+  width: fit-content;
+  height: 18px;
+  background-color: #c3d2a7;
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 这个是设置a标签的访问过后的状态去除下划线 */
+.zp_top_bgdc:visited {
+  text-decoration: none;
+  color: #fff;
+}
+/* 这个是设置a标签的鼠标覆盖状态去除下划线 */
+.zp_top_bgdc:hover {
+  text-decoration: none;
+  color: #fff;
+}
+/*  这个是设置a标签的活跃状态去除下划线 */
+.zp_top_bgdc:active {
+  text-decoration: none;
+  color: #fff;
+}
+
+.zp_btm {
+  width: 96%;
+  margin-left: 5%;
+}
+
+.zp_btm p {
+  text-indent: 3em;
+}

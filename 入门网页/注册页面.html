@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>注册</title>
+	</head>
+	<link href="css/bootstrap1.css" type="text/css" rel="stylesheet"/>
+	<script src="js/注册.js"></script>
+	<style>
+		body{ 
+			background: url(img/注册背景图.png) fixed;
+			background-repeat:no-repeat;background-size:100% 100%;}
+		</style>
+	<body>
+		<div class="col-xs-12 col-sm-10 col-md-8 col-lg-4 center-block " style="float: none;">
+		<br/><br/><br/>
+		<div class="block">
+						<!-- 用户注册头部 -->
+						<div class="block-title">
+							<div class="block-options pull-right">
+							<a href="首页.html" class="btn btn-effect-ripple btn-default toggle-bordered enable-tooltip">返回首页</a>
+							</div>
+							<h2><i class="fa fa-user"></i>&nbsp;<b>用户注册</b></h2>
+						</div>
+						<br />
+			<!-- 用户注册信息输入 -->
+			<form>
+				<!-- 用户名输入 -->
+				<h4>&nbsp;用户名：</h4>
+			<div class="input-group">
+				<div class="input-group-addon">
+					<span class="glyphicon glyphicon-user"></span>
+				</div>
+				<input type="text" class="form-control" id="username" required="required" placeholder="用户名"/><span id="usernameError"></span>
+			</div>
+			<h4>&nbsp;密码：</h4>
+			<div class="input-group">
+				<div class="input-group-addon">
+					<span class="glyphicon glyphicon-lock"></span>
+				</div>
+				<input type="password"  class="form-control" id="userpwd" required="required" placeholder="密码"/>
+			</div>
+			<h4>&nbsp;确认密码：</h4>
+			<div class="input-group">
+				<div class="input-group-addon">
+					<span class="glyphicon glyphicon-lock"></span>
+				</div>
+				<input type="password"  class="form-control" id="userpwd2" required="required" placeholder="确认密码"/><span id="pwdError"></span>
+			</div>
+			<h4>&nbsp;个人邮箱：</h4>
+			<div class="input-group">
+				<div class="input-group-addon">
+					<span class="glyphicon glyphicon-lock"></span>
+				</div>
+				<input type="text"  class="form-control" id="email" required="required" placeholder="个人邮箱"/><span id="emailError"></span>
+			</div>
+			
+			
+			
+						<br/>
+						<div class="form-group">
+							<input type="button" value="立即注册"  class="btn btn-primary btn-block" id="submitBtn"/>
+						</div>
+						<hr>
+						<div class="form-group">
+							<a onclick="window.alert('暂不支持找回密码')" class="btn btn-info btn-rounded"><i class="fa fa-unlock"></i>&nbsp;找回密码</a>
+							<a href="登录页面.html" class="btn btn-danger btn-rounded" style="float:right;"><i class="fa fa-user-plus"></i>&nbsp;返回登录</a>
+						</div>
+			</form>
+				</div>
+		</div>
+	</body>
+</html>

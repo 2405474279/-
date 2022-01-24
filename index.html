@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/fairyDustCursor.js"></script>
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      href="https://cdn.bootcdn.net/ajax/libs/animate.css/4.1.1/animate.compat.css"
+      rel="stylesheet"
+    />
+    <script async src="/js/index.js"></script>
+    <title>我做过的那些项目</title>
+  </head>
+  <body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <!--品牌和切换分组，更好的移动显示 -->
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1"
+            aria-expanded="false"
+          >
+            <span class="sr-only">切换导航</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">作品集</a>
+        </div>
+
+        <!-- 收集导航链接、表单和其他内容进行切换 -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="#">暂无内容</a>
+            </li>
+            <li>
+              <a href="#">暂无内容</a>
+            </li>
+            <!-- 下拉框 友情链接 -->
+            <li class="dropdown">
+              <a
+                href="#"
+                class="dropdown-toggle"
+                data-toggle="dropdown"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                title="本站使用的技术库"
+                >友情链接 <span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="https://v3.bootcss.com/">bootstrap</a></li>
+                <li><a href="https://jquery.com/">JQuery</a></li>
+                <li>
+                  <a href="https://www.glyphicons.com/">Glyphicon Halflings</a>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li>
+                  <a href="https://www.w3school.com.cn/html/html5_intro.asp"
+                    >HTML5</a
+                  >
+                </li>
+                <li role="separator" class="divider"></li>
+                <li>
+                  <a href="https://www.runoob.com/css3/css3-tutorial.html"
+                    >CSS3</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a
+                class="head_gy"
+                href="Jieshao.html"
+                title="关于本站的使用的技术以及个人信息"
+                >关于</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+
+    <!-- 超大屏幕 -->
+    <div class="container bgd_img">
+      <!-- 大屏幕 ≥1200px-->
+      <h1 class="visible-lg pm_text_lg" id="cdpl_lg">欢迎来到作品集！</h1>
+      <!-- 中等屏幕 ≥992px -->
+      <h1 class="visible-md pm_text_md" id="cdpl_md">欢迎来到作品集！</h1>
+      <!-- 小屏幕 ≥768px -->
+      <h1 class="visible-sm pm_text_sm" id="cdpl_sm">欢迎来到作品集！</h1>
+      <!-- 超小屏幕 <768px 手机  -->
+      <h1 class="visible-xs pm_text_xs" id="cdpl_xs">欢迎来到作品集！</h1>
+    </div>
+
+    <!-- 三大设计 -->
+    <!-- 大屏幕 ≥1200px 中等屏幕 ≥992px -->
+    <div class="visible-lg visible-md">
+      <div class="san_da">
+        <!-- 左——建党一百周年 -->
+        <div class="san_left" onclick="tz_jdbn()">
+          <img
+            onmouseout="td_f()"
+            onmouseover="td()"
+            class="san_left_img"
+            id="san_left_img_1"
+            src="images/建党一百年主题网站.jpg"
+            alt="建党一百年主题网站"
+          />
+          <p class="san_left_p">网页设计&nbsp;-&nbsp;-&nbsp;建党一百年</p>
+        </div>
+        <!-- 中——小程序设计 -->
+        <div class="san_center">
+          <img
+            onmouseover="td_1()"
+            onmouseout="td_f_1()"
+            class="san_left_img"
+            id="san_left_img_2"
+            src="images/小程序.jpg"
+            alt="校园凌凌漆"
+          />
+          <p class="san_left_p">微信小程序&nbsp;-&nbsp;-&nbsp;校园凌凌漆</p>
+        </div>
+        <!-- 右——学习网页 -->
+        <div class="san_right" onclick="tz_rm()">
+          <img
+            onmouseover="td_2()"
+            onmouseout="td_f_2()"
+            class="san_left_img"
+            id="san_left_img_3"
+            src="images/学习网站.jpg"
+            alt="关于我的入门"
+          />
+          <p class="san_left_p">网页设计&nbsp;-&nbsp;-&nbsp;关于我的入门</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 小屏幕 ≥768px 超小屏幕 <768px 手机  -->
+    <div class="visible-sm visible-xs">
+      <!-- 第一块 两个方格 网页设计-->
+      <div class="er_da">
+        <div style="width: 48%; height: 120px" id="er_da_1" onclick="tz_jdbn()">
+          <img
+            class="er_left_img"
+            src="images/建党一百年主题网站.jpg"
+            alt="建党一百年主题网站"
+          />
+          <p class="er_left_p">网页设计&nbsp;-&nbsp;-&nbsp;建党一百年</p>
+        </div>
+        <div style="width: 48%; height: 120px" id="er_da_2" onclick="tz_rm()">
+          <img
+            class="er_left_img"
+            src="images/学习网站.jpg"
+            alt="关于我的入门"
+          />
+          <p class="er_left_p">网页设计&nbsp;-&nbsp;-&nbsp;关于我的入门</p>
+        </div>
+      </div>
+      <!-- 第二块 一个方格 小程序设计 -->
+      <div class="er_da_yi" id="er_da_yi">
+        <img class="er_left_img" src="./images/小程序.jpg" alt="" />
+        <p class="er_left_p">微信小程序&nbsp;-&nbsp;-&nbsp;校园凌凌漆</p>
+      </div>
+    </div>
+  </body>
+</html>

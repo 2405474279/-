@@ -1,0 +1,100 @@
+body {
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 253, 76),
+    rgb(10, 107, 252)
+  );
+}
+
+.bgd_img {
+  height: 300px;
+  background-image: url(/images/大背景图.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.pm_text_lg {
+  position: absolute;
+  color: #fff;
+  opacity: 0.1;
+}
+
+.pm_text_md {
+  text-align: center;
+  padding-top: 60px;
+  color: #fff;
+  opacity: 1;
+}
+
+.pm_text_sm {
+  color: #fff;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.pm_text_xs {
+  color: #fff;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.san_da {
+  width: 100%;
+  height: 230px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.san_left {
+  width: 30%;
+  height: 100%;
+}
+
+.san_left_img {
+  width: 100%;
+  height: 88%;
+}
+
+.san_left_p {
+  text-align: center;
+  color: #fff;
+  align-items: center;
+  margin-top: 1%;
+}
+
+.san_center {
+  width: 30%;
+  height: 100%;
+}
+
+.san_right {
+  width: 30%;
+  height: 100%;
+}
+
+.er_da {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.er_left_img {
+  width: 100%;
+  height: 85%;
+}
+
+.er_left_p {
+  text-align: center;
+  color: #fff;
+  align-items: center;
+  margin-top: 1%;
+  font-size: 8px;
+}
+
+.er_da_yi {
+  height: 120px;
+  width: 98%;
+  margin-left: 1%;
+  margin-top: 8px;
+}

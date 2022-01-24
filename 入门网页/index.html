@@ -1,0 +1,247 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+		<meta charset="utf-8"> 
+		<title>学习网</title>
+		<link href="css/bootstrap.css" rel="stylesheet" type="text/css"> 
+		<link href="css/轮播.css"  rel="stylesheet"/>
+		<link href="css/example-fixed-layout.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="css/solid.css">
+		<link rel="stylesheet" href="css/fontawesome.css">
+		<link rel="stylesheet" href="css/style.css">
+		<style type="text/css">
+			#y:hover{
+				transition: all 0.5s ease-in-out;
+				box-shadow:1px 5px 5px #aaffff;
+				}
+			img{
+				width: 1000px;
+				height: 400px;
+			}
+			body{
+				background: url(img/首页背景图.png) fixed;
+				background-repeat:no-repeat;background-size:100% 100%;
+				}
+				
+			.divkeyframes{
+				width:200px;
+				height:100px;
+				margin: auto;
+				background:red;
+				position:relative;
+				z-index:2;
+				animation:divkeyframes 10s infinite;
+			}
+			.divkeyframes:hover{
+				animation-play-state:paused;
+			}
+			@keyframes divkeyframes{
+				0%   {top:0px; left:-300px; background: url(img/计算机基础.png);background-size:100% 100%;}
+ 				25%  {top:520px; left:-300px;background: url(img/HTML+css+JavaScript.png);background-size:100% 100%;}
+				50%  {top:520px; left:310px;background: url(img/html5.png);background-size:100% 100%;}
+				75%  {top:0px; left:310px;background: url(img/java.png);background-size:100% 100%;}
+				100% {top:0px; left:10px;background: url(img/python.png);background-size:100% 100%;}
+ 			}
+		</style>
+	</head>
+	<body>
+	<div class="divkeyframes"></div>
+	<!-- 布局 -->
+			<div class="navbar navbar-fixed-top">
+		<!-- 导航条 -->
+				  <div class="navbar-inner">
+						<div class="container">
+							<ul class="nav">
+								<li class="active">
+									<a class="brand" style="color: #ffffff;" href="https://129.211.59.94/">首页</a>
+								</li>
+								<li><a onclick="window.alert('计算机是现代一种用于快速计算的电子计算机，它具备数值计算、逻辑计算和存储记忆能力，能够按照设定的程序规则自动、高速处理数据的现代智能电子设备。我们一般称为“电脑”。计算机是在20世纪由“约翰·冯·诺依曼”发明，“约翰·冯·诺依曼”也被称为“计算机之父”。')" id="y">计算机基础</a></li>
+								<li><a onclick="window.alert('Java是由Sun Microsystems公司于1995年5月推出的Java面向对象程序设计语言和Java平台的总称。由James Gosling和同事们共同研发，并在1995年正式推出。Java分为三个体系：JavaSE（J2SE）（Java2 Platform Standard Edition，java平台标准版）JavaEE(J2EE)(Java 2 Platform,Enterprise Edition，java平台企业版)JavaME(J2ME)(Java 2 Platform Micro Edition，java平台微型版)。2005年6月，JavaOne大会召开，SUN公司公开Java SE 6。此时，Java的各种版本已经更名以取消其中的数字2：J2EE更名为Java EE, J2SE更名为Java SE，J2ME更名为Java ME')"id="y">java</a></li>
+								<li><a onclick="window.alert('Python 是一个高层次的结合了解释性、编译性、互动性和面向对象的脚本语言。Python 的设计具有很强的可读性，相比其他语言经常使用英文关键字，其他语言的一些标点符号，它具有比其他语言更有特色语法结构。')"id="y">Python</a></li>
+							</ul>
+							<ul class="nav">
+								<li class="dropdown">
+									<a href="#"
+										class="dropdown-toggle"
+										data-toggle="dropdown"
+										id="y">
+										Wed前端
+										<b class="caret"></b>
+									</a>
+									<ul class="dropdown-menu">
+										<li><a onclick="window.alert('HTML称为超文本标记语言，是一种标识性的语言。它包括一系列标签．通过这些标签可以将网络上的文档格式统一，使分散的Internet资源连接为一个逻辑整体。HTML文本是由HTML命令组成的描述性文本，HTML命令可以说明文字，图形、动画、声音、表格、链接等。')"id="y" style="background-color: #544b4e;">HTML</a></li>
+										<li><a onclick="window.alert('CSS 指层叠样式表 (Cascading Style Sheets);样式定义如何显示 HTML 元素;样式通常存储在样式表中;把样式添加到 HTML 4.0 中，是为了解决内容与表现分离的问题;外部样式表可以极大提高工作效率;外部样式表通常存储在 CSS 文件中;多个样式定义可层叠为一')"id="y" style="background-color: #000000;">CSS</a></li>
+										<li><a onclick="window.alert('JavaScript（简称“JS”） 是一种具有函数优先的轻量级，解释型或即时编译型的高级编程语言。虽然它是作为开发Web页面的脚本语言而出名的，但是它也被用到了很多非浏览器环境中，JavaScript 基于原型编程、多范式的动态脚本语言，并且支持面向对象、命令式和声明式（如函数式编程）风格。')"id="y" style="background-color: #00aaff;">JavaScript</a></li>
+									</ul>
+								</li>
+							</ul>
+							<!-- 搜索框 -->
+							<form class="navbar-search pull-left">
+							  <input type="text" class="search-query" placeholder="搜索(如HTML等)" id="ssk"/>
+							  <!-- <input type="button" value="查询" onclick="alert('查询失败')"/> -->
+							</form>
+							<!-- 在线音乐-->
+ 							<ul class="nav">
+								<li class="dropdown">
+									<a href="#"
+										class="dropdown-toggle"
+										data-toggle="dropdown"
+										id="y">
+										学习累了，听听歌吧
+										<b class="caret"></b>
+									</a>
+									<ul class="dropdown-menu" id="y">
+										<br /><br /><br /><br /><br />
+										<li>
+											<div id="dowebok">
+											    <div id="player">
+													<!-- 歌名作曲 -->
+											        <div id="player-track">
+											            <div id="album-name"></div>
+											            <div id="track-name"></div>
+														<!-- 时间 -->
+											            <div id="track-time">
+											                <div id="current-time"></div>
+											                <div id="track-length"></div>
+											            </div>
+														<!-- 进度条 -->
+											            <div id="s-area">
+											                <div id="ins-time"></div>
+											                <div id="s-hover"></div>
+											                <div id="seek-bar"></div>
+											            </div>
+											        </div>
+											        <div id="player-content">
+														<!-- 图像 -->
+											            <div id="album-art">
+											                <img src="images/1.jpg" class="active" id="album-pic">
+											                <div id="buffer-box">加载中...</div>
+											            </div>
+											            <div id="player-controls">
+															<!-- 上一首 -->
+											                <div class="control" >
+											                    <div class="button" id="play-previous" >
+											                        <i style="color: #000000;">&lt;&lt;</i>
+											                    </div>
+											                </div>
+															<!-- 停止 -->
+											                <div class="control">
+											                    <div class="button" id="play-pause-button">
+											                        <i style="color: #000000;">=</i>
+											                    </div>
+											                </div>
+															<!-- 下一首 -->
+											                <div class="control">
+											                    <div class="button" id="play-next">
+											                        <i style="color: #000000;">&gt;&gt;</i>
+											                    </div>
+											                </div>
+											            </div>
+											        </div>
+											    </div>
+											</div>
+											</li>
+									</ul>
+								</li>
+							</ul>
+							<ul class="nav pull-right">
+								<li><a href="登录页面.html" >登录/注册</a></li>
+							</ul>
+						</div>
+					</div>
+			<!-- 主页 -->
+			
+ 			<div class="container">
+			<div class="leaderboard">
+			<h1 style="color: #c8b83b;">计算机学习</h1>
+			<p style="color: #FFFFFF;">全球最好的计算机学习网站，该网站提供HTML5,CSS，JavaScript，java，Python等提供学习......</p>
+			<div id="myCarousel" class="carousel slide">
+			   <!-- 轮播（Carousel）指标 -->
+			   <ol class="carousel-indicators">
+			      <li data-target="#myCarousel" data-slide-to="0"class="active"></li>
+			      <li data-target="#myCarousel" data-slide-to="1"></li>
+			      <li data-target="#myCarousel" data-slide-to="2"></li>
+				  <li data-target="#myCarousel" data-slide-to="3"></li>
+				  <li data-target="#myCarousel" data-slide-to="4"></li>
+			   </ol>   
+			   <!-- 轮播（Carousel）项目 -->
+			   <div class="carousel-inner">
+				<!-- 第一张图片 -->
+			      <div class="item active">
+			        <a href="https://www.w3school.com.cn/h.asp">
+						<img src="img/HTML+css+JavaScript.png" alt="First slide"  >
+						</a>
+			      <div class="carousel-caption">
+					  <a style="border: #FFFFFF;"href="https://www.w3school.com.cn/h.asp">
+						  HTML+CSS+JavaScript
+						  </a>
+						</div>
+				  </div>
+				  <!-- 第二张图片 -->
+			      <div class="item">
+			         <a href="https://www.w3school.com.cn/html5/index.asp">
+						 <img src="img/html5.png" alt="Second slide" width="500px" height="200px">
+						 </a>
+					<div class="carousel-caption">
+						<a style="border: #FFFFFF;"href="https://www.w3school.com.cn/html5/index.asp">
+							HTML5
+							</a>
+						</div>
+			      </div>
+				  <!-- 第三张图片 -->
+			      <div class="item">
+			         <a href="https://www.w3school.com.cn/css/index.asp">
+						 <img src="img/CSS.png" alt="Third slide" width="500px" height="200px">
+						 </a>
+					<div class="carousel-caption">
+						<a style="border: #FFFFFF;"href="https://www.w3school.com.cn/css/index.asp">
+							CSS
+							</a>
+						</div>
+			      </div>
+				  <!-- 第四张图片 -->
+				  <div class="item">
+				     <a href="https://www.w3cschool.cn/java/">
+						 <img src="img/java.png" alt="Third slide" width="500px" height="200px">
+						 </a>
+				  	<div class="carousel-caption">
+						<a style="border: #FFFFFF;"href="https://www.w3cschool.cn/java/">
+							JAVA
+							</a>
+						</div>
+				  </div>
+				  <!-- 第五张图片 -->
+				  <div class="item">
+				     <a href="https://www.w3cschool.cn/position/kqc20f.html">
+						 <img src="img/python.png" alt="Third slide" width="500px" height="200px">
+						 </a>
+				  			<div class="carousel-caption">
+								<a style="border: #FFFFFF;"href="https://www.w3cschool.cn/position/kqc20f.html">
+								PYthon
+								</a>
+						</div>
+				  </div>
+			   </div>
+			   <!-- 轮播（Carousel）导航 -->
+			   <a class="carousel-control left" href="#myCarousel" 
+			      data-slide="prev">&lsaquo;</a>
+			   <a class="carousel-control right" href="#myCarousel" 
+			      data-slide="next">&rsaquo;</a>
+			</div> 
+			<!-- 页尾 -->
+			<hr>
+			<footer>
+			  <p style="background-color: #161922;color: #ffffff;">&copy; Copyright 2020-2020 软件技术二班.AllRightsReserved.</p>
+			</footer>
+			</div>
+			</div>
+			</div>
+			<script src="js/jquery.js"></script>
+			<script src="js/bootstrap-dropdown.js"></script>
+			<script src="js/bootstrap.min.js"></script>
+			<script src="js/轮播.js"></script>
+			<script src="js/查询.js"></script>
+			 <script src="js/index.js"></script>
+</body>
+</html> 
+

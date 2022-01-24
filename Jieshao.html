@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./js/jquery.js"></script>
+    <script src="./js/jquery-ui.js"></script>
+    <link rel="stylesheet" href="./css/jquery-ui.css" />
+    <link rel="stylesheet" href="./css/jieshao.css" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <title>关于我和页面技术实现</title>
+  </head>
+  <body>
+    <!-- 大屏幕、超大屏幕  例电脑-->
+    <div class="visible-lg visible-md">
+      <div>
+        <h1 class="dn_h1">个人主页及说明</h1>
+      </div>
+      <!-- 导航条 -->
+      <div class="d_h_l">
+        <ul class="dhl_ul">
+          <li id="dhl_ul_1"><a href="./index.html" style="color: #000000;text-decoration: none;">作品集</a></li>
+          <li id="dhl_ul_2" style="background-color: #fefff9">个人简介</li>
+          <li id="dhl_ul_3">作品使用技术</li>
+          <li id="dhl_ul_4">我的技能</li>
+        </ul>
+      </div>
+      <!-- 内容 -->
+      
+      <!-- 内容——个人简介 -->
+      <div class="cont_1" id="cont_2">
+        <!-- 左边——个人头像 -->
+        <div class="cont_1_1">
+          <img class="cont_img_2" src="./images/头像.jpg" alt="个人头像" />
+        </div>
+        <!-- 右边——个人联系方式 -->
+        <div class="cont_1_2">
+          <div class="c_grjj_top">
+            <h1 class="c_grjj_top_h">黄先森个人简介</h1>
+            <p style="margin-left: 3%">现居：广东广州白云区</p>
+            <p style="margin-left: 3%">爱好：唱歌跳舞</p>
+            <p style="margin-left: 3%">特长：什么都会一点，什么都不精通</p>
+          </div>
+          <div class="c_grjj">
+            <div>
+              <img class="erweima_wx" src="./images/头像.jpg" alt="" />
+              <img class="erweima_wxgzh" src="./images/头像.jpg" alt="" />
+            </div>
+            <div
+              class="c_grjjz"
+              title="微信二维码"
+              onmouseover="wxewm()"
+              onmouseout="wxewm_f()"
+            >
+              <img
+                class="cont_img_2"
+                src="./images/微信.png"
+                alt="微信二维码"
+              />
+              <p style="text-align: center">微信</p>
+            </div>
+            <div
+              class="c_grjjz"
+              title="个人微信公众号"
+              onmouseover="wxgzhewm()"
+              onmouseout="wxgzhewm_f()"
+            >
+              <img
+                class="cont_img_2"
+                src="./images/微信公众号.png"
+                alt="微信公众号"
+              />
+              <p style="text-align: center">微信公众号</p>
+            </div>
+            <div class="c_grjjz" title="邮箱" onclick="yxtz()">
+              <img class="cont_img_2" src="./images/邮箱.png" alt="邮箱" />
+              <p style="text-align: center">邮箱</p>
+            </div>
+            <div class="c_grjjz" title="手机号：17607632587" onclick="sjh()">
+              <img class="cont_img_2" src="./images/手机号.png" alt="手机号" />
+              <p style="text-align: center">手机</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 内容——我的作品 -->
+      <div class="cont_1" id="cont_3" style="display: none">
+        <div class="cont_1_zp">
+          <!-- 上半部分 -->
+          <div class="zp_top">
+            <!-- 第一层 -->
+            <div class="zp_top_1">
+              <a
+                class="zp_top_bgdc"
+                href="https://www.w3school.com.cn/html/index.asp"
+                title="前端三剑客之一"
+                >HTML</a
+              >
+              <a
+                class="zp_top_bgdc"
+                href="https://developer.mozilla.org/zh-CN/docs/Learn/CSS/First_steps/What_is_CSS"
+                title="前端三剑客之一"
+                >CSS</a
+              >
+              <a
+                class="zp_top_bgdc"
+                href="https://www.javascript.com/"
+                title="前端三剑客之一"
+                >JavaScript</a
+              >
+              <a
+                class="zp_top_bgdc"
+                href="https://getbootstrap.com/"
+                title="ui框架"
+                >bootstrap</a
+              >
+              <a
+                class="zp_top_bgdc"
+                href="https://animate.style/"
+                title="动画框架"
+                >Animate</a
+              >
+            </div>
+            <!-- 第二层 -->
+            <div class="zp_top_1">
+              <a class="zp_top_bgdc" href="https://jquery.com/ title="js框架">JQuery</a>
+              <a class="zp_top_bgdc" href="https://www.tutorialspoint.com/html5/index.htm" title="常用的版本">HTMl5</a>
+              <a class="zp_top_bgdc" href="https://www.w3schools.com/Js/js_es6.asp" title="常用的版本">ES6</a>
+              <a class="zp_top_bgdc" href="https://www.tutorialspoint.com/css/css3_tutorial.htm" title="常用的版本">CSS3</a>
+            </div>
+            <!-- 第三层 -->
+            <div class="zp_top_1">
+              <a class="zp_top_bgdc" href="https://www.google.com/chrome/" title="编译浏览器">Chrome</a>
+              <a class="zp_top_bgdc" href="https://code.visualstudio.com/" title="代码编辑器">VS Code</a>
+              <a class="zp_top_bgdc" href="https://developer.mozilla.org/zh-CN/docs/Web/API/Document_Object_Model/Introduction" title="跳转开发手册">DOM</a>
+            </div>
+          </div>
+          <!-- 下半部分 -->
+          <div class="zp_btm">
+            <h3>网页简介：</h3>
+            <p>本站基本<strong>可查看本人曾经创作过的作品</strong>和<strong>本人技能</strong>（小程序、网页、海报等）</p>
+            <p>网页使用的<strong>技术、调试软件和编辑器</strong>均在上方</p>
+            <p>点击按钮可跳转到对应的官网或者开发手册，<strong>部分网站需翻墙才能访问</strong></p>
+            <p>本站使用bootstrap开发，所以移动端和pc端网页布局样式会<strong>有区别</strong></p>
+            <p>本网页为<strong>静态网页</strong>，无后端，正在开发中，敬请期待！！！！！！！！！！！！！</p>
+          </div>
+        </div>
+      </div>
+      <!-- 内容——我的技能 -->
+      <div class="cont_1" id="cont_4" style="display: none">
+        <div class="cont_1_2_jn">
+          <ul class="jn_ul">
+            <li class="jn_li_html" title="熟练度:九成">HTML</li>
+            <li class="jn_li_css" title="熟练度:八成">CSS</li>
+            <li class="jn_li_js" title="熟练度:七成">JavaScript</li>
+
+            <li class="jn_li_jq" title="熟练度:八成">jquery</li>
+            <li class="jn_li_btp" title="熟练度:七成">bootstrap</li>
+            <li class="jn_li_vue" title="熟练度:五成">Vue</li>
+
+            <li class="jn_li_word" title="熟练度:九成">Word</li>
+            <li class="jn_li_excel" title="熟练度:八成">Excel</li>
+            <li class="jn_li_ppt" title="熟练度:七成">PPT</li>
+
+            <li class="jn_li_ps" title="熟练度:九成">PS</li>
+            <li class="jn_li_ai" title="熟练度:七成">AI</li>
+            <li class="jn_li_pr" title="熟练度:七成">剪辑</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 小屏幕、超小屏幕 例手机 -->
+    <div class="visible-sm visible-xs"></div>
+  </body>
+  <script src="./js/jieshao.js"></script>
+</html>
